@@ -240,12 +240,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612012345563_Init.cs" />
+    <Compile Include="Migrations\201612012345563_Init.Designer.cs">
+      <DependentUpon>201612012345563_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612012351465_AddProductAndCategory.cs" />
+    <Compile Include="Migrations\201612012351465_AddProductAndCategory.Designer.cs">
+      <DependentUpon>201612012351465_AddProductAndCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Services\CalculatePricesService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -332,6 +345,14 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201612012345563_Init.resx">
+      <DependentUpon>201612012345563_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612012351465_AddProductAndCategory.resx">
+      <DependentUpon>201612012351465_AddProductAndCategory.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
