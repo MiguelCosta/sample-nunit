@@ -248,6 +248,10 @@
     <Compile Include="Migrations\201612012351465_AddProductAndCategory.Designer.cs">
       <DependentUpon>201612012351465_AddProductAndCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612031250305_AddProductQuantityAvailable.cs" />
+    <Compile Include="Migrations\201612031250305_AddProductQuantityAvailable.Designer.cs">
+      <DependentUpon>201612031250305_AddProductQuantityAvailable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -260,6 +264,7 @@
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Services\CalculatePricesService.cs" />
     <Compile Include="Services\NamesFormatService.cs" />
+    <Compile Include="Services\QuantityAvailableService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -353,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201612012351465_AddProductAndCategory.resx">
       <DependentUpon>201612012351465_AddProductAndCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612031250305_AddProductQuantityAvailable.resx">
+      <DependentUpon>201612031250305_AddProductQuantityAvailable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -111,6 +111,7 @@
     <Compile Include="Controllers\ValuesControllerTest.cs" />
     <Compile Include="Services\CalculatePricesServiceTest.cs" />
     <Compile Include="Services\NamesFormatServiceTest.cs" />
+    <Compile Include="Services\QuantityAvailableServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

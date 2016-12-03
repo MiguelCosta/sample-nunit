@@ -4,9 +4,9 @@ namespace Mpc.SampleNUnit.Services
 {
     public class CalculatePricesService
     {
-        public decimal CalculateProductPrice(Product product, int quantity)
+        public decimal CalculateProductPrice(Product product, double quantity)
         {
-            return product.Price * quantity;
+            return product.Price * (decimal) quantity;
         }
     }
 }
