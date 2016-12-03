@@ -1,13 +1,14 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using FluentAssertions;
 using Mpc.SampleNUnit.Models;
 using Mpc.SampleNUnit.Services;
+using NUnit.Framework;
 
 namespace Mpc.SampleNUnit.Tests.Services
 {
-    [TestClass]
+    [TestFixture]
     public class CalculatePricesServiceTest
     {
-        [TestMethod]
+        [Test]
         public void CalculateProductPrice_WithNoPrice_ShouldReturnZero()
         {
             // Arrange
@@ -18,7 +19,7 @@ namespace Mpc.SampleNUnit.Tests.Services
             var price = service.CalculateProductPrice(product, 1);
 
             // Assert
-            Assert.AreEqual(0, price);
+            price.Should().Be(0);
         }
     }
 }
